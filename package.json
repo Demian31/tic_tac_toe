@@ -13,6 +13,7 @@
     "gulp-postcss": "^8.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "tailwindcss": "^1.4.6"
   }
 }

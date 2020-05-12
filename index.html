@@ -2,37 +2,44 @@
 <html>
 
 <head>
-	<script src="main.js"></script>
-	<link href="build/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="build/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class="container mx-auto">
-		<div class="md:flex bg-white rounded-lg p-6">
-			<img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="avatar.jpg">
-			<div class="text-center md:text-left">
-	     		<h2 class="text-lg">Erin Lindford</h2>
-	     		<div class="text-purple-500">Customer Support</div>
-	     		<div class="text-gray-600">erinlindford@example.com</div>
-	     		<div class="text-gray-600">(555) 765-4321</div>
-   	 		</div>
+
+
+	<div class="container mx-auto flex flex-wrap">
+		<h1 class="w-full text-center text-6xl mb-4">Tic-Tac-Toe</h1>
+
+		<div id="player1" class="w-1/4 m-5">
+			<h3 id="player-1-name" class="mb-40 text-center text-3xl">Player 1</h3>
+			<div class="text-2xl">
+				<p id="player1s-wins">Wins: 0</p>
+				<p>Marker: X</p>
+				<p id="player1s-turn"></p>
+			</div>
 		</div>
 
-		<form>
-			<input class="bg-gray-200 hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:shadow-outline focus: border-gray-300">
-			<button class="bg-teal-500 hover:bg-teal-600">
-				Sign in 
-			</button>
-		</form>
+		<div id="gameBoard" class="flex-1 w-1/2 flex flex-col m-5 justify-center content-center text-4xl"></div>
 
-		<form>
-  <input class="bg-gray-200 hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:shadow-outline focus:border-gray-300 ...">
-  <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline ...">
-    Sign Up
-  </button>
-</form>
+		<div id="player1" class="w-1/4 m-5">
+			<h3 id="player-2-name" class="mb-40 text-center text-3xl">Player 2</h3>
+			<div class="text-2xl">
+				<p id="player2s-wins">Wins: 0</p>
+				<p>Marker: O</p>
+				<p id="player2s-turn"></p>
+			</div>
+		</div>
+
+		<div class="w-full flex justify-center">
+			<button id="start-button" class="border-solid border-2 border-gray-600 text-3xl px-5 mx-5">Start</button>
+			<button id="reset-button" class="border-solid border-2 border-gray-600 text-3xl px-5 mx-5">Reset</button>
+		</div>
 	</div>
-	
+
+
+	<script src="main.js"></script>
 </body>
 
 </html>
